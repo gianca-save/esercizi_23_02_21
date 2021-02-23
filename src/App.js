@@ -22,4 +22,10 @@ function App() {
   );
 }
 
+const test1 = <h1>Esercitazione 23-2-21</h1>
+const test2 = <footer>Copyright by me</footer>
+
+
+
 export default App;
+export {test1, test2}
