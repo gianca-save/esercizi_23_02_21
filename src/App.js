@@ -3,7 +3,7 @@ import './App.css';
 
 function App() {
   const today = new Date();
-  const year = toString(today.getFullYear);
+  const year = today.getFullYear();
   const text = `Copyright by me: ${year}`; // year OBJECT UNDEFINED???
   return (
     <div className="App">
