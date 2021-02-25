@@ -1,6 +1,6 @@
 function Header(props) {
     return (
-        <header>
+        <header className='welcome'>
             <img src={props.logo} alt=""/>
             <span>{props.name}</span>
         </header>

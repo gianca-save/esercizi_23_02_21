@@ -3,7 +3,9 @@ import './App.css';
 import consola from '../node_modules/consola';
 import Header from './components/Header.js';
 import Body from './components/Body.js';
-import Footer from './components/Footer.js'
+import Footer from './components/Footer.js';
+import './css/Header.css';
+import './css/Body.css'
 
 const data = {
   name: 'HappyShoes',

@@ -2,7 +2,7 @@ import React from 'react';
 
 class Body extends React.Component {
     cover() {
-        return <img src={this.props.cover} alt=""/>
+        return <img className='banner' src={this.props.cover} alt=""/>
     }
 
     title() {
@@ -15,7 +15,7 @@ class Body extends React.Component {
 
     render() {
         return (
-            <main>
+            <main className='main_card'>
                 {this.cover()}
                 {this.title()}
                 {this.description()}
