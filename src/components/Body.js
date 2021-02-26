@@ -7,17 +7,17 @@ class Body extends React.Component {
     constructor(props) {
         super(props);
 
-        this.state = {
-            showProducts: false
-        }
-    }
+    this.state = {
+      showProducts: false,
+    };
+  }
 
-    makeVisible() {
-        this.setState({ showProducts: true });
-    }
+  makeVisible() {
+    this.setState({ showProducts: true });
+  }
 
      productsCards() {
-        return this.state.showProducts ? (<div className='Products_Container'><ul>{(this.products).map((product) => { return (<li> <Product title={product.title} /> </li>)})}</ul></div>) : (<button onClick={this.makeVisible}>Mostra Prodotti</button>)
+        return this.showProducts ? (<div className='Products_Container'><ul>{(this.props.products).map((product) => { return (<li> <Product title={product.title} /> </li>)})}</ul></div>) : (<button onClick={()=> this.makeVisible()}>Mostra Prodotti</button>)
     }
 
     cover() {
